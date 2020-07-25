@@ -1,0 +1,23 @@
+<div class="col-sm-9 col-md-7 col-lg-5 mx-auto" style="max-width: 450px;">
+  <div class="card card-signin my-5">
+    <div class="login-title">
+      <div class="login-icon">
+        <i class="fa fa-user fa-5x"></i>
+      </div>
+      <div class="login-heading">User Login</div>
+    </div>
+    <form class="form-signin">
+      <label for="inputEmail" class="sr-only">Enter EmailAddress</label>
+      <input name="email" type="email" id="inputEmail" class="form-control"
+        [(ngModel)]="user.email" placeholder="Emailaddress" required autofocus />
+      <label for="inputPassword" class="sr-only">Enter Password</label>
+      <input name="password" type="password" id="inputPassword" class="form-control" [(ngModel)]="user.password"
+        placeholder="Password" required />
+      <button class="btn btn-lg btn-primary btn-block" (click)="validateLogin();" type="button">Sign in</button>
+      <div class="forgot-pwd-container">
+        <button type="button" class="forgot-pwd-link"><span>Register</span></button>
+        <button type="button" class="forgot-pwd-link"><span>Forgot password?</span></button>
+      </div>
+    </form>
+  </div>
+</div>
